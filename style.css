@@ -1,0 +1,159 @@
+*{
+    background: #f3f5fc;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 106%;
+}
+
+.logo{
+    padding-top: 5px;
+    margin-left: 5px;
+    width: 5%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.zona-texto{
+    border: none;
+    color: #0a3871;
+    margin-top: 50px;
+    text-transform: lowercase;
+}
+
+::placeholder{ color: #0a3871; }
+    .zona-texto:focus{
+        outline: none;
+    }
+
+.mensaje{
+
+    background: #f3f5fc;
+    background-image: url("/Users/Rosalba/Desktop/Challence Alura/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 140%;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 60px;
+    padding-left: 80px;
+    position: center;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 35px;
+    text-align: center;
+
+}
+
+.desencriptar{
+    background: #d4d8de;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 47px;
+    margin-left: 30px;
+    width: 328px;
+    margin-top: 90px;
+}
+
+.encriptar{
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    width: 328px;
+    margin-top: 90px;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30px;
+}
+
+.copiar{    
+    
+    background: #d4d8de;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;  
+    cursor: pointer;
+    height: 47px;
+    margin-left: 650px;
+    position: absolute;
+    width: 328px;
+    margin-top: -190px;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*responsivo*/
+
+@media screen and (min-width: 350px){
+    .botones{
+        display: flex;
+        flex-direction:content ;
+        justify-content: space-around;
+    }
+
+    .mensaje {
+        background-size: 120%;
+        width: 60%;
+        margin: 0% 35% 0% 35% 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+
+    .logo_redes{
+        grid-area: pie-pagina;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        grid-auto-flow: column;
+        align-items: center;
+        background-color: blanchedalmond;
+    }
+
+    .logo_redes img{
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .logo_redes p {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+}
